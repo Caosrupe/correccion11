@@ -1,0 +1,38 @@
+[
+    {
+"id":"1",
+        "title":"Parlante Pionner Triaxial",
+        "description":"Parlantes de Auto con capacidad maxima de 200 watts con funcion Triaxial.",
+        "price":65000,
+        "categoryid":1,
+        "stock":10,
+        "pictureurl":"https://pioneer-latin.com/wp-content/uploads/2019/07/ts-f1634r_top-600x600.jpg"
+    },
+    {
+"id":"2",
+    "title":"Parlante JBL Triaxial",
+    "description":"Parlantes de Auto de 175 watts con funcion Triaxial.",
+    "price":55000,
+    "categoryid":1,
+    "stock":10,
+    "pictureurl":"https://tecnocar.cl/image/cache/catalog/product/%20PARLANTES/JBL/GTO-629%20P-700x700.jpg"
+    },
+    {
+"id":"3",
+    "title":"Subwoofer Pionner",
+    "description":"Subwoofer 12 pulgadas con 1200 RMS Doble Bobina",
+    "price":120000,
+    "categoryid":2,
+    "stock":8,
+    "pictureurl":"https://http2.mlstatic.com/D_840631-MLM46093648703_052021-O.jpg"
+    },
+    {
+"id":"4",
+    "title":"Subwoofer JBL Plano",
+    "description":"Subwoofer JBL plano de 12 pulgadas y 1200w de RMS ",
+    "price":65000,
+    "categoryid":2,
+    "stock":10,
+    "pictureurl":"https://shop.audionuts.mx/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/u/subwoofer-jbl-club-ws1200-b.jpg"
+    }
+]
