@@ -23,7 +23,7 @@ useEffect(()=>{
 
 
 
-    <div class="p-3 mb-2 bg-dark text-white">
+    <div>
 
 
             <ItemDetail  jsonpack={producto} />

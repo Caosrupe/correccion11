@@ -7,17 +7,17 @@ import { Link } from "react-router-dom";
 
 
 const CartWidget = () => {
-        const divStyles = {color: "#60269e", margin: "25px"}
+        
         const {cartlength}=useContext(CartContext);
             console.log("Valor Total en Widget");
             console.log("cargando CartWidget");
 
 
             return (
-        <div style={divStyles}>
+        <div>
             <Nav.Link href='/#'>{cartlength()>0 && cartlength()}
             <Link to={'/cart'}>
-            <FontAwesomeIcon icon={faShoppingCart}/></Link>
+            <FontAwesomeIcon className="carrito" icon={faShoppingCart}/></Link>
             </Nav.Link>
         </div>
     )

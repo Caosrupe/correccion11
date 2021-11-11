@@ -51,7 +51,7 @@ if(categoryid)
     console.log(cat);
     return (
         <div name="test">
-            <div class="p-3 mb-2 bg-dark text-white">
+            <div className="contenedor">
                 {name}
             <ItemList items={item}/>
             </div>

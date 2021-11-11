@@ -1,4 +1,4 @@
-import {Button,ButtonGroup,Table} from 'react-bootstrap';
+import {ButtonGroup,Table} from 'react-bootstrap';
 import React, {useState,useContext} from 'react';
 import {CartContext} from './CartContext';
 import {useParams} from "react-router-dom";
@@ -8,7 +8,7 @@ import {useParams} from "react-router-dom";
 const ItemCount=({productname,stock,initial,productid,itemprice})=>{
 const [count,setCount]=useState(initial);
 const {itemid}=useParams();
-const {additem,additem2,carts,cartlength,isInCartIndex,removeitem}=useContext(CartContext);
+const {additem,carts,cartlength}=useContext(CartContext);
 const add=()=>{
 
         if(count+1>stock){
@@ -36,7 +36,7 @@ const sub=()=>{
         <>
           <p></p>
           <p></p>
-            <ButtonGroup aria-label="Basic example">
+            <ButtonGroup>
               <Table striped bordered hover className="tabla" size="sm" align="center" >
                 <thead className="thead">
                   <tr>
@@ -45,20 +45,20 @@ const sub=()=>{
                     <th></th>
                   </tr>
                 </thead>
-                <tbody style={{ width: '18rem' }}>
+                <tbody className="body">
                   <tr>
                     <td>
-                      <Button className="botoncito"  onClick={sub}>-</Button>
+                      <button className="botoncito2"  onClick={sub}>-</button>
                     </td>
-                    <td align="center">{count}</td>
+                    <td className="counter">{count}</td>
                     <td>
-                      <Button className="botoncito" onClick={add}>+</Button>
+                      <button className="botoncito1" onClick={add}>+</button>
                     </td>
                   </tr>
                   <tr>
                     <td></td>
                     <td align="center">
-                      <Button className="botoncito" disabled={count===0} id="but2" onClick={()=>additem(productname,itemid,count,itemprice)}>Agregar a carrito</Button>
+                      <button className="botoncito3" disabled={count===0} id="but2" onClick={()=>additem(productname,itemid,count,itemprice)}>Agregar a carrito</button>
                     </td>
                     <td></td>
                   </tr>

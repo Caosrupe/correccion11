@@ -9,7 +9,7 @@ const {removeitem}=useContext(CartContext);
     console.log("Estoy en DelButton con itemid:"+itemid);
     
     return(
-    <button  onClick={()=>removeitem({itemid})}>Eliminar Item</button>
+    <button className="botondel"  onClick={()=>removeitem({itemid})}>Quitar</button>
     )
 };
 
